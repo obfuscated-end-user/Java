@@ -17,7 +17,7 @@ public class linkedList1 {
 
     void addNode(int data) {
         Node newNode = new Node(data);
-        if (head == null ) {
+        if (head == null) {
             head = newNode;
             tail = newNode;
         } else {
@@ -30,10 +30,10 @@ public class linkedList1 {
         Node current = head;
         if (head == null) {
             System.out.println("List is empty");
-            return;
+            return; // exit the function immediately
         }
         System.out.println("Nodes of singly linked list");
-        while (current != null) {
+        while (current != null) {   // while there are still nodes
             System.out.println(current.data + " ");
             current = current.next;
         }
@@ -42,25 +42,25 @@ public class linkedList1 {
 
     // woohoo inconsistent formatting motherfuckers
     void insertFirst(int newData) {
-        Node new_Node = new Node (newData);
-        new_Node.next = head;
-        head = new_Node;
+        Node new_Node = new Node(newData);  // initialize new node
+        new_Node.next = head;               // set new node's next value to the old head node
+        head = new_Node;                    // set the value of head to that of new node, because it is now the first node
     }
 
     void insertLast(int newData) {
-        Node new_Node = new Node (newData);
+        Node new_Node = new Node(newData);
 
-        if (head == null) {
-            head = new Node(newData);
-            return;
+        if (head == null) { // if there are no node
+            head = new Node(newData);   // insert and initialize new node
+            return; // exit the function, since there is only one node, therefore it is the last node
         }
-        new_Node.next = null;
-        Node last = head;
+        new_Node.next = null;   // there's nothing after the last node, that's why it's set to null
+        Node last = head;   // not sure
 
-        while (last.next != null)
-            last = last.next;
+        while (last.next != null)   // while there is a node
+            last = last.next;       // set old last's next node value to the next value of itself
 
-        last.next = new_Node;
+        last.next = new_Node;   // set the new last's value to that of new_Node
         return;
     }
 

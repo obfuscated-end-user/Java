@@ -3,8 +3,8 @@
 public class linkedList1 {
 
     class Node {
-        int data;
-        Node next;
+        int data;   // data inside the node
+        Node next;  // next node after this node. no previous because this is a singly linked list.
 
         Node (int data) {
             this.data = data;

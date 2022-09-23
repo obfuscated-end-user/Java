@@ -1,5 +1,6 @@
 import java.util.LinkedList;
 
+// LinkedList is a doubly linked list according to the docs
 public class LinkedListExample {
     public static void main(String[] args) {
         LinkedList<String> Names = new LinkedList<>();

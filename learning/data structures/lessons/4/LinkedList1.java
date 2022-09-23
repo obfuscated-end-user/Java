@@ -19,6 +19,7 @@ public class LinkedList1 {
     void addNode(int data) {
         // Create a new node
         Node newNode = new Node(data);
+        // System.out.println(newNode);
         
         // Checks if the list is empty
         if (head == null) {
@@ -27,6 +28,7 @@ public class LinkedList1 {
             tail = newNode;
         } else {
             // newNode will be added after tail such that tail's next will point to newNode
+            // tl;dr tail's next is newNode, which is what you added.
             tail.next = newNode;
             // newNode will become new tail of the list
             tail = newNode;
@@ -38,14 +40,16 @@ public class LinkedList1 {
         // Node current will point to head
         Node current = head;
         
+        // if no head
         if (head == null) {
             System.out.println("List is empty");
-            return;
+            return; // exit the function immediately
         }
         System.out.println("Nodes of singly linked list: ");
         while (current != null) {
             // Prints each node by incrementing pointer
             System.out.print(current.data + " ");
+            // "current++" even though that doesn't make any sense
             current = current.next;
         }
         System.out.println();

@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+
 public class OtherListOperations {
     public static void main(String[] args) {
         // creating an instance of ArrayList
@@ -9,7 +11,7 @@ public class OtherListOperations {
         list1.add(67);
 
         // iteration over ArrayList using for-each loop
-        for(Integer f : list1) {
+        for (Integer f : list1) {
             System.out.print(f + " ");
         }
 
@@ -20,7 +22,7 @@ public class OtherListOperations {
         list2.add(5);
 
         // print the size of list again
-        System.out.println("\n Size of list after adding more elements:" + list1.size());
+        System.out.println("\nSize of list after adding more elements: " + list1.size());
 
         // remove a specific element
         list1.remove(3);
@@ -29,7 +31,7 @@ public class OtherListOperations {
         list1.addAll(list2);
 
         // remove the content of index 3 and print all the element in  list1 and list2
-        System.out.println("List after addAll:"+ list1);
+        System.out.println("List after addAll: "+ list1);
 
         // contains method
         if (list2.contains(10) == true)
@@ -53,18 +55,18 @@ public class OtherListOperations {
             System.out.println("list1 and list2 are not equal.\n");
 
         // access list elements using index with get () method
-        System.out.println("Element at index 0:" + list1.get(0));
-        System.out.println("Element at index 1:" + list1.get(1));
-        System.out.println("Element at index 2:" + list1.get(2));
+        System.out.println("Element at index 0: " + list1.get(0));
+        System.out.println("Element at index 1: " + list1.get(1));
+        System.out.println("Element at index 2: " + list1.get(2));
 
         // set element at index 1 to 1000
         list1.set(1,1000);
-        System.out.println("Element at list1 index 1 was changed to :" + list1.get(1) );
+        System.out.println("Element at list1 index 1 was changed to: " + list1.get(1) );
         list1.addAll(list2);
-        System.out.println("List after addAll:"+ list1);
+        System.out.println("List after addAll: "+ list1);
 
         // remove all the elements in the list
         list1.clear();
-        System.out.println("\nList after calling clear() method:" + list1);
+        System.out.println("\nList after calling clear() method: " + list1);
     }
 }

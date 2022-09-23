@@ -17,46 +17,62 @@ public class CommonOperations1 {
     // Insert at the beginning
     public void insertAtBeginning(int new_data) {
         // insert the data
+        // make new node
         Node new_node = new Node(new_data);
+        // make new node's next to be that of head, which is something that already exists
         new_node.next = head;
+        // change the head node to that of new node
         head = new_node;
     }
     
     // Insert after a node
     public void insertAfter(Node prev_node, int new_data) {
+        // if there is no previous node, typically happens if you put in the head, which has no previous node since it is on the start of the list
         if (prev_node == null) {
             System.out.println("The given previous node cannot be null");
             return;
         }
+        // make new node
         Node new_node = new Node(new_data);
+        // set new node's next to that of previous node's next
         new_node.next = prev_node.next;
+        // set previous node's next to that of new node, essentially putting the new node between the previous node and previous node's next.
         prev_node.next = new_node;
     }
     
     // Insert at the end
     public void insertAtEnd(int new_data) {
+        // make new node with new data, since we're inserting something new
         Node new_node = new Node(new_data);
 
+        // if no head, then put the new node there
         if (head == null) {
             head = new Node(new_data);
-            return;
+            return; // function breaks from here if true
         }
 
+        // since the new node is at the end, it's next value is null
         new_node.next = null;
 
+        // point last to head, to start preparing to traverse the list
         Node last = head;
+        // while not at the last position
         while (last.next != null)
+            // last++
             last = last.next;
 
+        // finally, put the new node at the end of the list. this won't run until the while loop above is finished.
         last.next = new_node;
         return;
     }
     
     // Delete a node
     void deleteNode(int position) {
+        // if there's no head, don't do anything
         if (head == null)
             return;
 
+        // if there is a head, make a temporary pointer to head
         Node temp = head;
 
         if (position == 0) {

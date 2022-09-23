@@ -1,8 +1,11 @@
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.ListIterator;
+// using import java.util.*; is fucking stupid
 
 // list iterator
 // can't rename file as ListIterator.java
-public class HasNextPrevious {
+public class ListIterator1 {
     public static void main(String[] args) {
         List<Integer> ite = new ArrayList<Integer>();
         ite.add(100);
@@ -15,7 +18,7 @@ public class HasNextPrevious {
 
         System.out.println("Traversing elements in forward direction");
         while (val.hasNext()) {
-            System.out.println("index:"+val.nextIndex() + " " +val.next());
+            System.out.println("index:" + val.nextIndex() + " " + val.next());
         }
 
         System.out.println("Traversing elements in backward direction");

@@ -1,4 +1,6 @@
-import java.util.*;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
 
 public class SortList {
     public static void main(String[] args) {
@@ -30,7 +32,7 @@ public class SortList {
         Collections.sort(list2);
 
         // Traversing list through the for-each loop
-        for(int i : list2)
+        for (int i : list2)
             System.out.println(i);
     }
 }

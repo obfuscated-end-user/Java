@@ -1,6 +1,6 @@
 public class LinkedList1 {
     // Represent a node of the singly linked list
-    class Node{
+    class Node {
         int data;
         Node next;
         
@@ -11,7 +11,7 @@ public class LinkedList1 {
         }
     }
     
-    //  Represent the head and tail of the singly linked list
+    // Represent the head and tail of the singly linked list
     Node head = null;
     Node tail = null;
     
@@ -52,7 +52,6 @@ public class LinkedList1 {
     }
     
     public static void main(String[] args) {
-    
         LinkedList1 List1 = new LinkedList1();
         
         // Add nodes to the list

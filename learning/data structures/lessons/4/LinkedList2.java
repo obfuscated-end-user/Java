@@ -195,6 +195,20 @@ public class LinkedList2 {
         return node;
     }
 
+    // another version
+    public Node reverse2() {
+        Node prev = null;
+        Node next = null;
+        while(head != null) { // once next is at the end it will end up as null
+            next = head.next; // move the node to the next of the head
+            head.next = prev;  // replaces the link to the previous 
+            prev = head; // update the reference to the current head
+            head = next; // head point to the next
+        }// after the loop, head will be the same as next value which is null
+        head = prev;
+        return head;
+    }
+
     // Print the linked list
     public void printList() {
         Node tnode = head;

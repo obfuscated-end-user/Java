@@ -46,11 +46,9 @@ public class Stack {
         for (int i = top; i > -1; i--)
             System.out.println(" " + a[i]);
     }
-}
 
-// Driver code
-class Main {
-    public static void main(String args[]) {
+    // Driver code
+    public static void main (String args[]) {
         Stack s = new Stack();
         s.push(10);
         s.push(20);

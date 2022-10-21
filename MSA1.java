@@ -14,7 +14,7 @@ public class MSA1 {
     void addNode(int data) {
         Node newNode = new Node(data);
 
-        if(head == null) {
+        if (head == null) {
             head = newNode;
             tail = newNode;
         } else {
@@ -24,10 +24,10 @@ public class MSA1 {
     }
 
     void printList() {
-        Node tnode = head;
-        while (tnode != null) {
-            System.out.print(tnode.data + " ");
-            tnode = tnode.next;
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
         }
         System.out.println();
     }
@@ -53,6 +53,7 @@ public class MSA1 {
     int maximum() {
         Node current = head;
         int max = 0;
+
         if (head == null)
             System.out.println("List is empty");
         else {

@@ -10,7 +10,7 @@ public class MSA1 {
     }
     Node head = null;
     Node tail = null;
-    
+
     void addNode(int data) {
         Node newNode = new Node(data);
 

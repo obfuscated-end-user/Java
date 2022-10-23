@@ -1,77 +1,91 @@
-import java.util.LinkedList;
-
-// https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/
-// https://www.geeksforgeeks.org/linked-list-in-java/
-// https://www.google.com/search?client=firefox-b-d&q=java+linked+list+methods
-
 public class MSA1_1 {
-    public static void main(String[] args) {
-        // Problem 1. Using the singly linked list data structure (1) add the given nodes 13, 3, 22, 9 & 7 then (2) display the nodes 3) determine the minimum value in the list and the (4) maximum value in the list such as shown in the example below:
-        LinkedList<Integer> linkedList = new LinkedList<>();
+    class Node {
+        int data;
+        Node next;
 
+        Node(int d) {
+            data = d;
+            next = null;
+        }
+    }
+    Node head = null;
+    Node tail = null;
+
+    void addNode(int data) {
+        Node newNode = new Node(data);
+
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
+
+    void printList() {
+        Node current = head;
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+        System.out.println();
+    }
+
+    int minimum() {
+        Node current = head;
+        int min = 0;
+
+        if (head == null)
+            System.out.println("List is empty");
+        else {
+            min = head.data;
+            while (current != null) {
+                // if min has a larger value than current.data, assuming that whatever is in current.data is smaller than min, then replace the value of min with that of current.data.
+                if (min > current.data)
+                    min = current.data;
+                current = current.next;
+            }
+        }
+        return min;
+    }
+
+    int maximum() {
+        Node current = head;
+        int max = 0;
+
+        if (head == null)
+            System.out.println("List is empty");
+        else {
+            max = head.data;
+            while (current != null) {
+                // if max's value is less than current.data, assume that whatever is in max is smaller than current.data. evaluate max to whatever is in current.data
+                if (max < current.data)
+                    max = current.data;
+                current = current.next;
+            }  
+        }
+        return max;
+    }
+
+    // Problem 1. Using the singly linked list data structure (1) add the given nodes 13, 3, 22, 9 & 7 then (2) display the nodes 3) determine the minimum value in the list and the (4) maximum value in the list such as shown in the example below:
+    public static void main(String[] args) {
         // add the given nodes 13, 3, 22, 9 & 7
-        linkedList.add(13);
-        linkedList.add(3);
-        linkedList.add(22);
-        linkedList.add(9);
-        // linkedList.add(2);
-        linkedList.add(7);
+        MSA1_1 list = new MSA1_1();
+        list.addNode(13);
+        list.addNode(3);
+        list.addNode(22);
+        list.addNode(9);
+        list.addNode(7);
 
         // display the nodes
-        System.out.println("The nodes are: " + linkedList);
+        System.out.print("The nodes are: ");
+        list.printList();
 
         // determine the minimum value in the list
-        int min = 0;
-        int count = 0;
-        int size = linkedList.size();
-        for (int i = 0; i < size; ++i) {
-            /* if (min < linkedList.get(i)) {
-                min = linkedList.get(i);
-            } else if (min > linkedList.get(i)) {
-                min = linkedList.get(i);
-            }
-            System.out.println(min); */
-            min = Math.min(linkedList.get(i), linkedList.get(size - 1));
-            System.out.println(min);
-        }
+        System.out.println("Minimum value in the list is: " + list.minimum());
 
-        for (LinkedList<Integer> first = linkedList, int min = linkedList.getFirst(); ++i) {
-            min = Math.min(linkedList.get(i), linkedList.get(size-1));
-            System.out.println(min);
-        }
-
-        /* while (min < linkedList.get(size - 1)) {
-            if (linkedList.get(count) < linkedList.get(count + 1)) {
-                min = linkedList.get(count);
-            } else {
-                min = linkedList.get(size - 1);
-            }
-            System.out.println(min);
-            ++count;
-        } */
-
-        /* static int smallestElement(Node head) {
-            
-            // Declare a min variable and initialize
-            // it with INT_MAX value.
-            // INT_MAX is integer type and its value
-            // is 32767 or greater.
-            int min = Integer.MAX_VALUE;
-        
-            // Check loop while head not equal to NULL
-            while (head != null)
-            {
-        
-                // If min is greater than head->data then
-                // assign value of head->data to min
-                // otherwise node point to next node.
-                if (min > head.data)
-                    min = head.data;
-        
-                head = head.next;
-            }
-            return min;
-        } */
-        System.out.println("Minimum value in the list is : " + min);
+        // maximum value in the list
+        System.out.println("Maximum value in the list is: " + list.maximum());
     }
 }

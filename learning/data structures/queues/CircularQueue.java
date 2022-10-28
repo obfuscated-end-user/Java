@@ -1,16 +1,15 @@
 public class CircularQueue {
     // Circular Queue implementation in Java
-    
     static class CQueue {
     int SIZE = 5; // Size of Circular Queue
     int front, rear;
     int items[] = new int[SIZE];
-    
+
     CQueue() {
         front = -1;
         rear = -1;
     }
-    
+
     // Check if the queue is full
     boolean isFull() {
         if (front == 0 && rear == SIZE - 1) {
@@ -21,7 +20,7 @@ public class CircularQueue {
         }
         return false;
     }
-    
+
     // Check if the queue is empty
     boolean isEmpty() {
         if (front == -1)
@@ -29,7 +28,7 @@ public class CircularQueue {
         else
             return false;
     }
-    
+
     // Adding an element
     void enQueue(int element) {
         if (isFull()) {
@@ -42,7 +41,7 @@ public class CircularQueue {
             System.out.println("Inserted " + element);
         }
     }
-    
+
     // Removing an element
     int deQueue() {
         int element;
@@ -61,7 +60,7 @@ public class CircularQueue {
             return (element);
         }
     }
-    
+
     void display() {
     /* Function to display status of Circular Queue */
         int i;
@@ -77,35 +76,34 @@ public class CircularQueue {
         }
     }
     }
-    
+
     public static void main(String[] args) {
-    
-    CQueue q = new CQueue();
-    
-    // Fails because front = -1
-    q.deQueue();
-    
-    q.enQueue(10);
-    q.enQueue(12);
-    q.enQueue(37);
-    q.enQueue(6);
-    q.enQueue(5);
-    
-    // Fails to enqueue because front == 0 && rear == SIZE - 1
-    q.enQueue(16);
-    
-    q.display();
-    
-    int elem = q.deQueue();
-    
-    if (elem != -1) {
-    System.out.println("Deleted Element is " + elem);
-    }
-    q.display();
-    
-    q.enQueue(7);
-    
-    q.display();
-    
+
+        CQueue q = new CQueue();
+
+        // Fails because front = -1
+        q.deQueue();
+
+        q.enQueue(10);
+        q.enQueue(12);
+        q.enQueue(37);
+        q.enQueue(6);
+        q.enQueue(5);
+
+        // Fails to enqueue because front == 0 && rear == SIZE - 1
+        q.enQueue(16);
+
+        q.display();
+
+        int elem = q.deQueue();
+
+        if (elem != -1)
+            System.out.println("Deleted Element is " + elem);
+
+        q.display();
+
+        q.enQueue(7);
+
+        q.display();
     }
 }

@@ -11,8 +11,7 @@ public class PriorityQueue1 {   // can't name this file to PriorityQueue
         PQ.add("2");
 
         System.out.println("Strings Stored in Natural Ordering in a Priority Queue\n");
-        while (!PQ.isEmpty()) {
+        while (!PQ.isEmpty())
             System.out.println(PQ.poll());
-        }
     }
 }

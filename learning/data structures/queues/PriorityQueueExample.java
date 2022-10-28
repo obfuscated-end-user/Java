@@ -13,11 +13,9 @@ public class PriorityQueueExample {
             this.customerName = customerName;
         }
 
-
         public int compareTo(CustomerOrder o) {
             return o.orderId > this.orderId ? 1 : -1;
         }
-
 
         public String toString() {
             return "orderId:" + this.orderId + ", orderAmount:" + this.orderAmount + ", customerName:" + customerName;

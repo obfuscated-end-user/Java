@@ -17,8 +17,7 @@ public class PriorityQueueDescending {
         DescPQ.add(3);
 
         System.out.println("Integers stored in descending order of priority in a Priority Queue\n");
-        while (!DescPQ.isEmpty()) {
+        while (!DescPQ.isEmpty())
             System.out.println(DescPQ.poll());
-        }
     }
 }

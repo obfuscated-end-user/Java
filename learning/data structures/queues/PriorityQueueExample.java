@@ -13,10 +13,13 @@ public class PriorityQueueExample {
             this.customerName = customerName;
         }
 
+        // most of these are overloaded functions
+        // compareTo() is from the Comparable interface. what it does is that it sorts by ascending order. yeah great fucking explanation here dumbass, really detailed as shit bro.
         public int compareTo(CustomerOrder o) {
             return o.orderId > this.orderId ? 1 : -1;
         }
 
+        // gets called when a string representation is needed. in this case, to appear on the terminal
         public String toString() {
             return "orderId:" + this.orderId + ", orderAmount:" + this.orderAmount + ", customerName:" + customerName;
         }
@@ -38,6 +41,7 @@ public class PriorityQueueExample {
         customerOrders.add(c3);
         customerOrders.add(c4);
         customerOrders.add(c5);
+        // poll() removes the head (front) of the queue
         while (!customerOrders.isEmpty()) {
             System.out.println(customerOrders.poll());
         }

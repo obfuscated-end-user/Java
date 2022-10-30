@@ -15,3 +15,12 @@ public class PriorityQueue1 {   // can't name this file to PriorityQueue
             System.out.println(PQ.poll());
     }
 }
+
+/*
+shows this in terminal:
+1
+2
+BSCS
+I am
+hello
+*/

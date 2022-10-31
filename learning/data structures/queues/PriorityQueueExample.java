@@ -19,11 +19,12 @@ public class PriorityQueueExample {
             return o.orderId > this.orderId ? 1 : -1;
         }
 
-        // gets called when a string representation is needed. in this case, to appear on the terminal
+        // gets called when a string representation is needed. in this case, to appear on the terminal.
         public String toString() {
             return "orderId:" + this.orderId + ", orderAmount:" + this.orderAmount + ", customerName:" + customerName;
         }
 
+        // lol this isn't an overload you fucking retard
         public double getOrderAmount() {
             return orderAmount;
         }
@@ -41,7 +42,7 @@ public class PriorityQueueExample {
         customerOrders.add(c3);
         customerOrders.add(c4);
         customerOrders.add(c5);
-        // poll() removes the head (front) of the queue
+        // poll() removes the head (front) of the queue, and returns it
         while (!customerOrders.isEmpty()) {
             System.out.println(customerOrders.poll());
         }

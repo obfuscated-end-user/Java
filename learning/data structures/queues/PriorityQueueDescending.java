@@ -3,6 +3,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class PriorityQueueDescending {
+    // remember, the interace used on the previous priority queue is Comparable. this uses Comparator and this overloads a method named compare() from there. i don't know if you "overload" interface function declarations, but whatever.
     static class CustomIntegerComparator implements Comparator<Integer> {
         public int compare(Integer o1, Integer o2) {
             return o1 < o2 ? 1 : -1;

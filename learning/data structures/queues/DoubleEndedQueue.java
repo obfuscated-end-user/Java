@@ -5,11 +5,18 @@ public class DoubleEndedQueue {
         //Declare Deque object
         LinkedList<String> deque = new LinkedList<>();
         // add elements to the queue using various methods
+
+        // add element to the rear
         deque.add("Apple"); // add()
+        // add element to the front
         deque.addFirst("Mango"); // addFirst()
+        // functions exactly the same as add()
         deque.addLast("Fries"); // push()
+        // add the element to the rear and make it the "tail", or the last element in the list
         deque.offer("Paper"); // offer()
+        // add to the front
         deque.offerFirst("Table"); // offerFirst()
+        // add to the last
         deque.offerLast("Trees"); // offerLast()
         System.out.println("Initial Deque:");
         System.out.print(deque + " ");

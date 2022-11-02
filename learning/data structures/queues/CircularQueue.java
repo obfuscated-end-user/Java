@@ -76,6 +76,7 @@ public class CircularQueue {
                     System.out.print(items[i] + " ");
                 System.out.println(items[i]);
                 System.out.println("Rear -> " + rear);
+                System.out.println();
             }
         }
     }

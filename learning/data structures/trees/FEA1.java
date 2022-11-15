@@ -2,6 +2,7 @@ class FEA1 {
     public static void main(String[] args) {
         Tree tree = new Tree();
 
+        // root
         tree.root = new Node(50);
 
         // left
@@ -19,7 +20,7 @@ class FEA1 {
         tree.root.right.left.right = new Node(58);
         tree.root.right.right = new Node(70);
         tree.root.right.right.left = new Node(67);
-        
+
         System.out.println("\nIn-order traversal");
         tree.inOrder(tree.root);
         System.out.println("\nPre-order traversal");
@@ -35,7 +36,8 @@ class Node {
 
     public Node(int key) {
         item = key;
-        left = right = null;
+        left = null;
+        right = null;
     }
 }
 
@@ -50,7 +52,7 @@ class Tree {
         if (node == null)
             return;
         inOrder(node.left);
-        System.out.print(node.item + " -> ");
+        System.out.print(node.item + " ");
         inOrder(node.right);
     }
 
@@ -59,13 +61,13 @@ class Tree {
             return;
         postOrder(node.left);
         postOrder(node.right);
-        System.out.print(node.item + " -> ");
+        System.out.print(node.item + " ");
     }
 
     void preOrder(Node node) {
         if (node == null)
             return;
-        System.out.print(node.item + " -> ");
+        System.out.print(node.item + " ");
         preOrder(node.left);
         preOrder(node.right);
     }

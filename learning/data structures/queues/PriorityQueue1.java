@@ -6,9 +6,7 @@ public class PriorityQueue1 {   // can't name this file to PriorityQueue
         Queue<String> PQ = new PriorityQueue<>();
         PQ.add("hello");
         PQ.add("I am");
-        PQ.add("BSCS");
-        PQ.add("1");
-        PQ.add("2");
+        PQ.add("dQw4w9WgXcQ");
 
         System.out.println("Strings Stored in Natural Ordering in a Priority Queue\n");
         while (!PQ.isEmpty())
@@ -18,9 +16,7 @@ public class PriorityQueue1 {   // can't name this file to PriorityQueue
 
 /*
 shows this in terminal:
-1
-2
-BSCS
+dQw4w9WgXcQ
 I am
 hello
 */

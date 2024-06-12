@@ -1,4 +1,4 @@
-// ignore the retarded syntax error. the package import only fucks up this program and does not help.
+// ignore the syntax error. the package import only breaks the program and does not help.
 
 import java.util.*;
 public class StringsProgram {
@@ -9,7 +9,7 @@ public class StringsProgram {
             int something = (int) (Math.random() * 100);
             System.out.print(something + " ");
             if (something > 50) {
-                System.out.print(" ape sex ");
+                System.out.print("YVkUvmDQ3HY");
             }
         }
     }

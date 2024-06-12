@@ -45,7 +45,7 @@ public class JavaStackImplementation {
         // Replace the 3rd element of the stack with a lower case p
         stack.set(2, "p");
 
-        // Probably change this to finding the indices of P and p instead. Fucking retard at school doesn't know what he's doing.
+        // Probably change this to finding the indices of P and p instead.
         // Search for the position of upper-case P
         // System.out.println("Is \"P\" in the stack? " + stack.contains("P"));
         System.out.println("Position of \"P\": " + stack.search("P"));

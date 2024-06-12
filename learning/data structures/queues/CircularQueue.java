@@ -1,4 +1,4 @@
-// user-defined circular queue. works almost the same as the linear variant, but it circles around lol idk wtf
+// user-defined circular queue. works almost the same as the linear variant, but it circles around lol idk
 // read the linear queue first. most of the functions here do the same thing except for some minor modifications.
 public class CircularQueue {
     // Circular Queue implementation in Java
@@ -16,7 +16,7 @@ public class CircularQueue {
         boolean isFull() {
             if (front == 0 && rear == SIZE - 1)
                 return true;
-            // if ends meet? what the fuck does this part mean?
+            // if ends meet? what the hell does this part mean?
             if (front == rear + 1)
                 return true;
             return false;

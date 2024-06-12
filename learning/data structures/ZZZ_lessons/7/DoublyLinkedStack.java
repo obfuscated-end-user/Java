@@ -15,7 +15,7 @@ public class DoublyLinkedStack {
     }
 
     // Add elements onto stack
-    // modify the fucking variable names, especially the single-letter ones, to understand this shit better
+    // modify the variable names, especially the single-letter ones, to understand this better
     // edit: done
     public static void push(int data) {
         // make a new node
@@ -45,7 +45,7 @@ public class DoublyLinkedStack {
     }
 
     // Delete the top element from stack
-    // imagine something popping off the stack shut the fuck up bad analogy
+    // imagine something popping off the stack shut up bad analogy
     public static void pop() {
         // create an empty node, not a new node
         Node node;

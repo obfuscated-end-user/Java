@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Iterator;
 
 // dfs is the one with the backtracking
-// i apologize for not fixing the stupid fucking method names
+// i apologize for not fixing the method names
 public class DFS {
     private int Vertices;                   // No. of vertices    
     private LinkedList<Integer> adj_list[]; // adjacency list declaration

@@ -172,9 +172,9 @@ public class LinkedList2 {
         return count;
     }
 
-    // reverse daw gago
+    // reverse daw
     // since this reverses a node, it is easier to have this function's return type to be that of Node
-    // doesn't fucking work because you're retarded
+    // doesn't work
     Node reverse (Node node) {
         Node previous  = null;
         Node current = node;

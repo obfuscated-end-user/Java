@@ -35,7 +35,7 @@ public class CreateDoubly {
         }
         System.out.println("The Nodes are:");
         while(current != null) {
-            // guy probably meant print(), but fucked up
+            // guy probably meant print(), but messed up
             System.out.println(current.data + " ");
             current = current.next;
         }

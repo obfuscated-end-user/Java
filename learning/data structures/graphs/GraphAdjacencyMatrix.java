@@ -10,7 +10,7 @@ public class GraphAdjacencyMatrix {
     }
 
     void addEdge(int source, int destination) {
-        // you assign 1 to this because remember, you're marking the nodes that have a connection to each other, otherwise 0. we also don't need to assign 0 to unoccupied spaces because Java automatically does that shit for us.
+        // you assign 1 to this because remember, you're marking the nodes that have a connection to each other, otherwise 0. we also don't need to assign 0 to unoccupied spaces because Java automatically does that for us.
         // add edge
         matrix[source][destination] = 1;
         // add back edge for undirected graph

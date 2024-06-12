@@ -5,7 +5,7 @@ public class Graph {
         // "source" and "destination" probably
         // source is the data in the node
         // destination is the next node on its edge
-        // visualize this as O- where - is the edge and O is the node? what the fuck?
+        // visualize this as O- where - is the edge and O is the node? what?
         int src, dest;
     }
 
@@ -40,7 +40,7 @@ public class Graph {
         //             / 5 \
         //            / / \ \
         //            2 --- 4
-        // i don't know why but it looks like a retarded fucking squid
+        // i don't know why but it looks like a squid
 
         // better?
         //         create graph
@@ -52,7 +52,7 @@ public class Graph {
         //         /  ／ ＼  \
         //         2---------4
 
-        // i still don't get it, or the implementation is just as retarded
+        // i still don't get it, or the implementation is just as broken
         g.edge[0].src = 1; // edge 1---2
         g.edge[0].dest = 2;
 

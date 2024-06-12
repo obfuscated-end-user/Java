@@ -23,7 +23,7 @@ public static int reverse(int n) {
 }
 
 /*
-    ewan ko tangina kung anong ui daw gago
+    ewan ko kung anong ui daw
     pero ito ipasa mo kung gusto talaga sa main() tatawagin yung reverse()
 
     don kasi sa isa, hindi mo lang pwede basta basta na ilipat yung code ng mga button don sa main

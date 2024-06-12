@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.Iterator;
 
-// bfs is the one with the layer like shit
+// bfs is the one with the layer like thing
 public class BFS {
     private int Vertices;                   // No. of vertices
     private LinkedList<Integer> adj_list[]; // Adjacency Lists
@@ -28,7 +28,7 @@ public class BFS {
         LinkedList<Integer> queue = new LinkedList<Integer>();
 
         // current node = visited, insert into queue
-        // if this line still fucks with your head, yes, you're right that it's literally accessing the position of visited[root_node] and setting it to true. yes, they used it as an index in this context. the point is that all other nodes contain false, except this node and some other nodes.
+        // if this line still messes with your head, yes, you're right that it's literally accessing the position of visited[root_node] and setting it to true. yes, they used it as an index in this context. the point is that all other nodes contain false, except this node and some other nodes.
         visited[root_node] = true;
         queue.add(root_node);
 
@@ -39,7 +39,7 @@ public class BFS {
             System.out.print(root_node + " ");
 
             // get all adjacent nodes of current node and process
-            // some iterator that makes the code below do its fucking magic
+            // some iterator that makes the code below do its magic
             Iterator<Integer> i = adj_list[root_node].listIterator();
             // while there are nodes left
             while (i.hasNext()) {

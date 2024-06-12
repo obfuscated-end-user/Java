@@ -5,19 +5,19 @@ public class LoopingProgram {
         while loop:
         
         while (boolean value) {
-            your shit here;
+            your crap here;
             something that updates the condition, because you don't want infinite loops;
         }
 
         do-while
         do {
-            your shit here, will be executed at least once;
+            your crap here, will be executed at least once;
         } while (boolean value);
         */
 
         // this bit here approximates the value of pi\
         /*
-            pi = 4/(2i+1) +/- 4/(2i+1) what the fuck this is wrong
+            pi = 4/(2i+1) +/- 4/(2i+1) this is wrong
             when i = 0, this becomes 4
             when i = 1, this becomes 4/3
             when i = 2, this becomes 4/5
@@ -35,7 +35,7 @@ public class LoopingProgram {
         /*
         for loop
         for (int variable; condition; update variable) {
-            shit;
+            do something;
         }
         */
         for (int i = 0; i < 10; i++) {

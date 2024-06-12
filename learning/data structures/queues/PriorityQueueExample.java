@@ -14,7 +14,7 @@ public class PriorityQueueExample {
         }
 
         // most of these are overloaded functions
-        // compareTo() is from the Comparable interface. what it does is that it sorts by ascending order. yeah great fucking explanation here dumbass, really detailed as shit bro.
+        // compareTo() is from the Comparable interface. what it does is that it sorts by ascending order.
         public int compareTo(CustomerOrder o) {
             return o.orderId > this.orderId ? 1 : -1;
         }
@@ -24,7 +24,7 @@ public class PriorityQueueExample {
             return "orderId:" + this.orderId + ", orderAmount:" + this.orderAmount + ", customerName:" + customerName;
         }
 
-        // lol this isn't an overload you fucking retard
+        // lol this isn't an overload
         public double getOrderAmount() {
             return orderAmount;
         }

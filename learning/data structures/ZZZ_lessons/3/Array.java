@@ -1,4 +1,4 @@
-// removing the fucking package declaration makes it work
+// removing the package declaration makes it work
 
 // package lessons;
 

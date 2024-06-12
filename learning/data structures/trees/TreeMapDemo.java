@@ -4,14 +4,14 @@ import java.util.TreeMap;
 public class TreeMapDemo {
     public static void main(String[] args){
         TreeMap<String, Integer> treeMap = new TreeMap<>();
-        treeMap.put("BCS21", 33);
-        treeMap.put("BCS22", 33);
-        treeMap.put("BIT21", 36);
-        treeMap.put("BIT22", 33);
-        treeMap.put("BIT23", 30);
+        treeMap.put("FtutLA63Cp8", 33);
+        treeMap.put("ThHvx5a9IYA", 33);
+        treeMap.put("i41KoE0iMYU", 36);
+        treeMap.put("9lNZ_Rnr7Jc", 33);
+        treeMap.put("TKfdEDIdBzI", 30);
         printAll(treeMap);
         // Keys cannot be duplicates. This will not be stored.
-        treeMap.put("BCS21", 33);
+        treeMap.put("FtutLA63Cp8", 33);
 
         // Values may be duplicates. This will be stored.
         treeMap.put("BIT34", 33);

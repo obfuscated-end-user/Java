@@ -1,11 +1,11 @@
-// test shit here. import things below this and the next line. (line 3)
+// test stuff here. import things below this and the next line. (line 3)
 
 
 
 public class test {
     public static void main(String[] args) {
-        System.out.println("Hello World!\nJava is a piece of shit language."); /** println, not printIn you fucking retard. that's a lowercase L. */
-        testFuck(1, 2);
+        System.out.println("Hello World!\nJava is a bloated piece of crap.");// println, not printIn. That's a lowercase L.
+        test1(1, 2);
     }
 
     public static String addFraction(int numerator, int denominator) {
@@ -24,7 +24,7 @@ public class test {
         return "3";
     }
 
-    public static void testFuck(int numerator, int denominator) {
+    public static void test1(int numerator, int denominator) {
         int gcd = 1;
 
         int numerator1 = 1;

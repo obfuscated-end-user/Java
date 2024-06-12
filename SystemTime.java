@@ -1,4 +1,5 @@
 // https://techstudy.org/java/Write-a-Java-program-to-display-the-system-time
+// dead link 2024/06/12
 
 public class SystemTime {
     public static void main(String[] args){

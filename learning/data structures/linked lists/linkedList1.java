@@ -1,4 +1,4 @@
-// tangina kinopya ko lang to don sa gc para at least alam mo ginawa nila bobo
+// guess where this is from
 
 public class linkedList1 {
 
@@ -40,7 +40,7 @@ public class linkedList1 {
         System.out.println();
     }
 
-    // woohoo inconsistent formatting motherfuckers
+    // woohoo inconsistent formatting
     void insertFirst(int newData) {
         Node new_Node = new Node(newData);  // initialize new node
         new_Node.next = head;               // set new node's next value to the old head node

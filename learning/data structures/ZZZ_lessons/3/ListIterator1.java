@@ -1,7 +1,7 @@
 import java.util.List;
 import java.util.ArrayList;
 import java.util.ListIterator;
-// using import java.util.*; is fucking stupid
+// using import java.util.*; is stupid
 
 // list iterator
 // can't rename file as ListIterator.java

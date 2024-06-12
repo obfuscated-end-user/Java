@@ -1,10 +1,10 @@
 import java.util.LinkedList;
 
-// https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list/
-// https://www.geeksforgeeks.org/linked-list-in-java/
+// https://www.geeksforgeeks.org/find-smallest-largest-elements-singly-linked-list
+// https://www.geeksforgeeks.org/linked-list-in-java
 // https://www.google.com/search?client=firefox-b-d&q=java+linked+list+methods
 
-public class MSA1_1shit {
+public class MSA1_3 {
     public static void main(String[] args) {
         // Problem 1. Using the singly linked list data structure (1) add the given nodes 13, 3, 22, 9 & 7 then (2) display the nodes 3) determine the minimum value in the list and the (4) maximum value in the list such as shown in the example below:
         LinkedList<Integer> linkedList = new LinkedList<>();

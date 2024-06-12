@@ -21,7 +21,7 @@ public class LinearQueue {
     }
 
     boolean isEmpty() {
-        // if there is no front index, then queue is empty. no need to do shit with the rear.
+        // if there is no front index, then queue is empty. no need to do something with the rear.
         if (front == -1)
             return true;
         else

@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Capati_FinalsSummative1 {
+public class FinalsSummative1Old {
     public static void main(String[] args) {
         int size = 0;   // Size of array (grid) to be defined by user input
         int ctr = 0;    // Counter that will be used for loops later

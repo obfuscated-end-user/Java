@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class FinalsSummative1Old {
 	public static void main(String[] args) {
-		int size = 0;   // Size of array (grid) to be defined by user input
+		int size = 0;	// Size of array (grid) to be defined by user input
 		int ctr = 0;	// Counter that will be used for loops later
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter a number for the size of the grid: ");
